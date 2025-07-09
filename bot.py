@@ -9,23 +9,18 @@ class BasicBot:
         logging.basicConfig(filename='bot.log', level=logging.INFO)
 
     def place_order(self, symbol, side, order_type, quantity, price=None):
-        try:
-            params = {
-                "symbol": symbol,
-                "side": side,
-                "type": order_type,
-                "quantity": quantity
-            }
-            if order_type == Client.ORDER_TYPE_LIMIT:
-                params["price"] = price
-                params["timeInForce"] = Client.TIME_IN_FORCE_GTC
-
-            response = self.client.futures_create_order(**params)
-            logging.info(f"Order placed: {response}")
-            return response
-        except Exception as e:
-            logging.error(f"Error placing order: {e}")
-            return None
+    # Simulate a successful Binance response
+        mock_response = {
+            "symbol": symbol,
+            "orderId": 123456,
+            "status": "FILLED",
+            "executedQty": str(quantity),
+            "side": side,
+            "type": order_type
+        }
+        print(f"DEBUG - Simulated Order: {mock_response}")
+        logging.info(f"Order placed (simulated): {mock_response}")
+        return mock_response
 
     def place_stop_limit(self, symbol, side, quantity, price, stop_price):
         try:

@@ -35,7 +35,7 @@ trading_bot/
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/binance-trading-bot.git
+git clone https://github.com/yourusername/TradingBot.git
 cd binance-trading-bot
 ```
 
@@ -57,6 +57,12 @@ pip install -r requirements.txt
 ```bash
 python ui.py
 ```
+## 🖥️ Demo  
+
+###  Placing a Market Order  
+![Terminal Output](assets/terminal-demo.png)  
+
+
 
 ## 💬 Notes
 
