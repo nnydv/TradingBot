@@ -1,4 +1,4 @@
-# Binance Trading Bot (Internship Project)
+# Binance Trading Bot 
 
 This is a simplified Binance Futures trading bot built in Python, developed as part of a technical assignment for a Junior Python Developer Internship.
 
